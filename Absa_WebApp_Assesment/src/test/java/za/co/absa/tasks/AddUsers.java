@@ -6,6 +6,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.ensure.Ensure;
+import net.thucydides.core.annotations.Step;
+import net.thucydides.core.annotations.Steps;
 import za.co.absa.ui.AddUserForm;
 import za.co.absa.ui.UserTablesPage;
 
@@ -36,6 +38,7 @@ public class AddUsers implements Task {
     }
 
     @Override
+    @Step("{0} Adds the user #userName to the list")
     public <T extends Actor> void performAs(T dataCapturer) {
         dataCapturer.attemptsTo(
                 //WaitUntil.the(UserTablesPage.ADD_USER_BUTTON, isVisible()).forNoMoreThan(30).seconds(),

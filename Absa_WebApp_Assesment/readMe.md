@@ -15,4 +15,8 @@ Project structure
 Running the Project
 
     Run all Tests: mvn clean verify
+    Run Tests with tags: mvn clean verify -Dtags"tagName"
+    
+Report
+    target/site/serenity/index.html
     

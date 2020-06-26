@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Capture user date using data from CSV test","Should validate that the user is added csv","FAILURE","2020-06-26T13:17:03.018+02:00[Africa/Johannesburg]","0.0","31.31"
+"Capture user date using data from CSV test","Should validate that the user is added csv","SUCCESS","2020-06-26T13:55:34.674+02:00[Africa/Johannesburg]","0.0","27.64"

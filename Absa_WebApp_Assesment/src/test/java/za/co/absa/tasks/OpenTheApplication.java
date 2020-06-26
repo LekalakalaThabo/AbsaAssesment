@@ -10,7 +10,7 @@ public class OpenTheApplication implements Task {
     private Way2AutomateLandingPage way2AutomateLandingPage;
 
     @Override
-    @Step("Opens ILAB website")
+    @Step("Opens wayToAutomate website")
     public <T extends Actor> void performAs(T user) {
         user.attemptsTo(Open.browserOn().the(way2AutomateLandingPage));
 
