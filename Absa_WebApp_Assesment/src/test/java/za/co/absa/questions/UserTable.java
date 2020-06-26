@@ -12,6 +12,6 @@ public class UserTable implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
-        return Text.of(UserTablesPage.ADD_USER_BUTTON).viewedBy(actor).asString();
+        return Text.of(UserTablesPage.USENAME_VALUE).viewedBy(actor).asString();
     }
 }

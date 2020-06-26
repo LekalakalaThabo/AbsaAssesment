@@ -79,7 +79,8 @@ public class AddUsers implements Task {
 
         dataCapturer.attemptsTo(
                 Enter.theValue(email).into(AddUserForm.EMAIL_FIELD),
-                Enter.theValue(cell).into(AddUserForm.PHONE_FIELD)
+                Enter.theValue(cell).into(AddUserForm.PHONE_FIELD),
+                Click.on(AddUserForm.SAVE_BUTTON)
         );
 
     }

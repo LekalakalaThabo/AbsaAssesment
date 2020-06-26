@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" time="32.371" tests="2" errors="0" skipped="0" failures="2">
+<testsuite name="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" time="28.721" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.231-b11"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/tlekalakala/IdeaProjects/Absa_WebApp_Assesment"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/tlekalakala/IdeaProjects/AbsaAssesment/Absa_WebApp_Assesment"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/tlekalakala/IdeaProjects/Absa_WebApp_Assesment"/>
+    <property name="user.dir" value="/Users/tlekalakala/IdeaProjects/AbsaAssesment/Absa_WebApp_Assesment"/>
     <property name="java.runtime.version" value="1.8.0_231-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/endorsed"/>
@@ -64,94 +64,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="should_validate_that_the_user_is_added_csv[0]" classname="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" time="18.584">
-    <failure message="&#10;Expected: a string containing &quot;User1&quot;&#10;     but: was &quot;Add User&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: a string containing "User1"
-     but: was "Add User"
-	at za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest.should_validate_that_the_user_is_added_csv(CaptureUserDate_UsingDataFromCSVTest.java:55)
-</failure>
-    <system-err><![CDATA[[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
-
--------------------------------------------------------------------------------------
-     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
-    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
-   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
-    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
-.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
-|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
-                                                                                     
- News and tutorials at http://www.serenity-bdd.info                                  
- Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
- Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
--------------------------------------------------------------------------------------
-
-[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Capture user date using data from CSV test
-[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: should_validate_that_the_user_is_added_csv[0]
--------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 1
-Jun 26, 2020 1:16:30 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches:  --start-maximized;\n      ..., goog:chromeOptions: {args: [--start-maximized;\n, --test-type;\n, --no-sandbox;\n, --ignore-certificate-errors;\n, --disable-popup-blocking;\n, --disable-default-apps;\n, --disable-extensions-file-a..., --disable-infobars, --disable-gpu\n, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 16253
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 26, 2020 1:16:34 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="should_validate_that_the_user_is_added_csv[1]" classname="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" time="13.787">
-    <failure message="&#10;Expected: a string containing &quot;User2&quot;&#10;     but: was &quot;Add User&quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: a string containing "User2"
-     but: was "Add User"
-	at za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest.should_validate_that_the_user_is_added_csv(CaptureUserDate_UsingDataFromCSVTest.java:55)
-</failure>
-    <system-err><![CDATA[[main] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: za.co.absa.features
-[main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
-           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
-  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
- (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
-  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
- (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
-          \_\                                                            
-
-TEST FAILED: Should validate that the user is added csv
---------------------------------------------------------------------------
-[main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then user table should be a string containing 'User1'
-[main] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: a string containing "User1" but: was "Add User"
-[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Capture user date using data from CSV test
-[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: should_validate_that_the_user_is_added_csv[1]
--------------------------------------------------------------------
-[main] INFO net.serenitybdd.core.Serenity - TEST NUMBER: 2
-Jun 26, 2020 1:16:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
-INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[main] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches:  --start-maximized;\n      ..., goog:chromeOptions: {args: [--start-maximized;\n, --test-type;\n, --no-sandbox;\n, --ignore-certificate-errors;\n, --disable-popup-blocking;\n, --disable-default-apps;\n, --disable-extensions-file-a..., --disable-infobars, --disable-gpu\n, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 47280
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 26, 2020 1:16:50 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
+  <testcase name="should_validate_that_the_user_is_added_csv[0]" classname="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" time="20.057"/>
+  <testcase name="should_validate_that_the_user_is_added_csv[1]" classname="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" time="8.664"/>
 </testsuite>
