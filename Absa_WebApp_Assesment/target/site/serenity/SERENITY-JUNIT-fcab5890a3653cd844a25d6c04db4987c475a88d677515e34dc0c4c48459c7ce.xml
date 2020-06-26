@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" skipped="0" tests="2" time="27.64" timestamp="2020-06-26 01:55:34"><testcase classname="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" name="Should validate that the user is added csv"/></testsuite>

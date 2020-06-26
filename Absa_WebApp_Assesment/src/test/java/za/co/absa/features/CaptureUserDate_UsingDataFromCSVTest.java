@@ -14,6 +14,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static net.serenitybdd.screenplay.EventualConsequence.eventually;
 import static net.serenitybdd.screenplay.GivenWhenThen.*;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
@@ -21,29 +24,7 @@ import static org.hamcrest.CoreMatchers.containsString;
 
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom(value = "src/test/resources/TestData/TestData.csv")
-public class CaptureUserDate_UsingDataFromCSVTest {
-    @Managed()
-    public WebDriver theirWebDriver;
-
-    @Steps
-    OpenTheApplication openTheApplication;
-
-    private Actor dataCapturer ;
-
-    private String firstName;
-    private String lastName;
-    private String userName;
-    private String passWord;
-    private String customer;
-    private String role;
-    private String email;
-    private String cell;
-
-    @Before
-    public void user_can_browse_the_web(){
-        dataCapturer = Actor.named("Thabo");
-        dataCapturer.can(BrowseTheWeb.with(theirWebDriver));
-    }
+public class CaptureUserDate_UsingDataFromCSVTest extends BaseFeature{
 
     @Test
     @WithTag("CSVData")

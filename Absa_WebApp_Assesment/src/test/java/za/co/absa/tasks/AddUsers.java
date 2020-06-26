@@ -50,16 +50,18 @@ public class AddUsers implements Task {
                 Enter.theValue(userName).into(AddUserForm.USER_NAME_FIELD),
                 Enter.theValue(passWord).into(AddUserForm.PASSWORD_FIELD)
                 );
+        selectCustomer(customer,dataCapturer);
+        selectRole(role,dataCapturer);
 
-        if(customer.equalsIgnoreCase("Company AAA")){
-            dataCapturer.attemptsTo(
-                    Click.on(AddUserForm.AAA_RADIO_BUTTON)
-            );
-        }else
-            dataCapturer.attemptsTo(
-                    Click.on(AddUserForm.BBB_RADIO_BUTTON)
-            );
+        dataCapturer.attemptsTo(
+                Enter.theValue(email).into(AddUserForm.EMAIL_FIELD),
+                Enter.theValue(cell).into(AddUserForm.PHONE_FIELD),
+                Click.on(AddUserForm.SAVE_BUTTON)
+        );
 
+    }
+
+    private <T extends Actor> void selectRole(String role, T dataCapturer) {
         if(role.equalsIgnoreCase("Sales Team")){
             dataCapturer.attemptsTo(
                     Click.on(AddUserForm.SALES_ROLE_OPTION)
@@ -76,16 +78,17 @@ public class AddUsers implements Task {
             );
 
         }
+    }
 
-
-
-
-        dataCapturer.attemptsTo(
-                Enter.theValue(email).into(AddUserForm.EMAIL_FIELD),
-                Enter.theValue(cell).into(AddUserForm.PHONE_FIELD),
-                Click.on(AddUserForm.SAVE_BUTTON)
-        );
-
+    private <T extends Actor> void selectCustomer(String customer, T dataCapturer) {
+        if(customer.equalsIgnoreCase("Company AAA")){
+            dataCapturer.attemptsTo(
+                    Click.on(AddUserForm.AAA_RADIO_BUTTON)
+            );
+        }else
+            dataCapturer.attemptsTo(
+                    Click.on(AddUserForm.BBB_RADIO_BUTTON)
+            );
     }
 
 

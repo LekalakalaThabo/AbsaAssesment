@@ -23,24 +23,7 @@ import static net.serenitybdd.screenplay.GivenWhenThen.*;
 import static org.hamcrest.CoreMatchers.containsString;
 
 @RunWith(SerenityParameterizedRunner.class)
-@UseTestDataFrom(value = "src/test/resources/TestData/TestData.csv")
-public class CaptureUserDate_UsingDataFromLocatDataSourceTest {
-    @Managed()
-    public WebDriver theirWebDriver;
-
-    @Steps
-    OpenTheApplication openTheApplication;
-
-    private Actor dataCapturer;
-
-    private String firstName;
-    private String lastName;
-    private String userName;
-    private String passWord;
-    private String customer;
-    private String role;
-    private String email;
-    private String cell;
+public class CaptureUserDate_UsingDataFromLocatDataSourceTest extends BaseFeature{
 
     public CaptureUserDate_UsingDataFromLocatDataSourceTest(String firstName, String lastName, String userName, String passWord, String customer, String role, String email, String cell) {
         this.firstName = firstName;
@@ -53,15 +36,6 @@ public class CaptureUserDate_UsingDataFromLocatDataSourceTest {
         this.cell = cell;
     }
 
-
-
-
-
-    @Before
-    public void user_can_browse_the_web(){
-        dataCapturer = Actor.named("Thabo");
-        dataCapturer.can(BrowseTheWeb.with(theirWebDriver));
-    }
 
     @TestData
     public static Collection<Object[]> testData(){
