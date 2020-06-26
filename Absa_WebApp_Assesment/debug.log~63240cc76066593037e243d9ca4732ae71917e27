@@ -1,0 +1,6 @@
+[0813/100557.115:ERROR:file_io_win.cc(161)] CreateFile C:\Users\TLEKAL~1\AppData\Local\Temp\scoped_dir17332_86186367\Crashpad\settings.dat: The system cannot find the path specified. (0x3)
+[0813/100557.117:ERROR:file_io_win.cc(170)] CreateFile C:\Users\TLEKAL~1\AppData\Local\Temp\scoped_dir17332_86186367\Crashpad\reports\d13f8b32-a9f0-4cee-bf3a-8a4e62023950.dmp: The system cannot find the path specified. (0x3)
+[0813/100557.117:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
+[0828/113806.510:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0902/102104.850:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[1106/165825.802:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0

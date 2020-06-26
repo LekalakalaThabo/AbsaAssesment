@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 37.289 sec <<< FAILURE! - in za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest
+should_validate_that_the_user_is_added_csv[0](za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest)  Time elapsed: 18.584 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a string containing "User1"
+     but: was "Add User"
+	at za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest.should_validate_that_the_user_is_added_csv(CaptureUserDate_UsingDataFromCSVTest.java:55)
+
+should_validate_that_the_user_is_added_csv[1](za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest)  Time elapsed: 13.787 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a string containing "User2"
+     but: was "Add User"
+	at za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest.should_validate_that_the_user_is_added_csv(CaptureUserDate_UsingDataFromCSVTest.java:55)
+

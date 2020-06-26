@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: za.co.absa.features.CaptureUserDate_UsingDataFromLocatDataSourceTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec - in za.co.absa.features.CaptureUserDate_UsingDataFromLocatDataSourceTest

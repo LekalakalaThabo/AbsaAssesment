@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="2" name="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" skipped="0" tests="2" time="31.31" timestamp="2020-06-26 01:17:03"><testcase classname="za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest" name="Should validate that the user is added csv"><failure message="&#10;Expected: a string containing &quot;User1&quot;&#10;     but: was &quot;Add User&quot;" type="java.lang.AssertionError">
+Expected: a string containing "User1"
+     but: was "Add User"</failure><system-err>
+Expected: a string containing "User1"
+     but: was "Add User"
+za.co.absa.features.CaptureUserDate_UsingDataFromCSVTest.should_validate_that_the_user_is_added_csv(CaptureUserDate_UsingDataFromCSVTest.java:55)
+</system-err></testcase></testsuite>

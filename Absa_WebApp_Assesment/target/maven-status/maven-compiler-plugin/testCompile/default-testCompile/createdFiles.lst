@@ -1,0 +1,9 @@
+za/co/absa/features/CaptureUserDate_UsingDataFromLocatDataSourceTest.class
+za/co/absa/utils/PhoneNumberGenerator.class
+za/co/absa/features/CaptureUserDate_UsingDataFromCSVTest.class
+za/co/absa/tasks/AddUsers.class
+za/co/absa/questions/UserTable.class
+za/co/absa/ui/AddUserForm.class
+za/co/absa/ui/Way2AutomateLandingPage.class
+za/co/absa/tasks/OpenTheApplication.class
+za/co/absa/ui/UserTablesPage.class
